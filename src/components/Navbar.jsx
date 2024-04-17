@@ -22,7 +22,7 @@ const Navbar = () => {
           <Bounce>
             <img src={flashLogo} className="h-12 inline" />
           </Bounce>
-          <Fade cascade damping={0.5} direction="right">
+          <Fade cascade damping={0.3} direction="right">
             <ul className="hidden md:flex">
               <Link
                 to="hero"
@@ -78,11 +78,11 @@ const Navbar = () => {
         <div
           className={
             nav
-              ? "fixed top-16 w-full h-full bg-[#f8f8f7] ease-in-out duration-500 text-black md:hidden z-40"
-              : "fixed top-[-100%] w-full h-full ease-in-out duration-500 z-0"
+              ? "fixed top-16 w-full h-full bg-[#f8f8f7] ease-in-out duration-500 text-black md:hidden"
+              : "fixed top-[-100%] w-full h-full ease-in-out duration-500"
           }
         >
-          <Fade cascade damping={0.5} direction="down">
+          <Fade cascade damping={0.3} direction="down">
             <ul className="p-4 text-center">
               <Link
                 to="hero"
@@ -92,7 +92,7 @@ const Navbar = () => {
                 duration={500}
                 onClick={handleNav}
               >
-                <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-white cursor-pointer">
+                <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-[#ffec34] cursor-pointer">
                   <TiHome className="mr-3" /> Home
                 </li>
               </Link>
@@ -104,7 +104,7 @@ const Navbar = () => {
                 duration={500}
                 onClick={handleNav}
               >
-                <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-white cursor-pointer">
+                <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-[#ffec34] cursor-pointer">
                   <RiGalleryFill className="mr-3" /> Gallery
                 </li>
               </Link>
@@ -113,7 +113,7 @@ const Navbar = () => {
                 target="_blank"
                 onClick={handleNav}
               >
-                <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-white cursor-pointer">
+                <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-[#ffec34] cursor-pointer">
                   <FaMapLocationDot className="mr-3" /> Location
                 </li>
               </a>
@@ -125,7 +125,7 @@ const Navbar = () => {
                 duration={500}
                 onClick={handleNav}
               >
-                <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-white cursor-pointer">
+                <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-[#ffec34] cursor-pointer">
                   <FaPhone className="mr-3" /> Contact
                 </li>
               </Link>

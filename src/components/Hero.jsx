@@ -1,9 +1,9 @@
-import { Fade } from "react-awesome-reveal";
+import { Slide } from "react-awesome-reveal";
 
 const Hero = () => {
   return (
     <>
-      <Fade damping={0.5} triggerOnce={true} direction="up">
+      <Slide direction="up" triggerOnce={true}>
         <div
           className="relative h-screen w-full bg-[url('../public/images/background.jpg')] bg-cover bg-no-repeat bg-center bg-fixed font-prompt"
           id="hero"
@@ -18,7 +18,7 @@ const Hero = () => {
             </span>
           </div>
         </div>
-      </Fade>
+      </Slide>
     </>
   );
 };
