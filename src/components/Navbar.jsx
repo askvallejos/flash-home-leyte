@@ -4,6 +4,7 @@ import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 import { TiHome } from "react-icons/ti";
 import { FaMapLocationDot } from "react-icons/fa6";
 import { FaPhone } from "react-icons/fa";
+import { RiGalleryFill } from "react-icons/ri";
 import { Fade, Bounce } from "react-awesome-reveal";
 import { Link } from "react-scroll";
 
@@ -81,22 +82,53 @@ const Navbar = () => {
               : "fixed top-[-100%] w-full h-full ease-in-out duration-500 z-0"
           }
         >
-          <Fade cascade damping={0.5} direction="left">
+          <Fade cascade damping={0.5} direction="down">
             <ul className="p-4 text-center">
-              <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-white cursor-pointer">
-                <TiHome className="mr-3" /> Home
-              </li>
+              <Link
+                to="hero"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                onClick={handleNav}
+              >
+                <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-white cursor-pointer">
+                  <TiHome className="mr-3" /> Home
+                </li>
+              </Link>
+              <Link
+                to="gallery"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                onClick={handleNav}
+              >
+                <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-white cursor-pointer">
+                  <RiGalleryFill className="mr-3" /> Gallery
+                </li>
+              </Link>
               <a
                 href="https://maps.app.goo.gl/MSGSXrasZeBeBLV88"
                 target="_blank"
+                onClick={handleNav}
               >
                 <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-white cursor-pointer">
                   <FaMapLocationDot className="mr-3" /> Location
                 </li>
               </a>
-              <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-white cursor-pointer">
-                <FaPhone className="mr-3" /> Contact
-              </li>
+              <Link
+                to="contact"
+                spy={true}
+                smooth={true}
+                offset={50}
+                duration={500}
+                onClick={handleNav}
+              >
+                <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-white cursor-pointer">
+                  <FaPhone className="mr-3" /> Contact
+                </li>
+              </Link>
             </ul>
           </Fade>
         </div>
