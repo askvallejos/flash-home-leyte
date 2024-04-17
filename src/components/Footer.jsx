@@ -4,7 +4,7 @@ const Footer = () => {
       <footer class="flex flex-col space-y-10 justify-center p-10 bg-[#ffec34] font-prompt">
         <div class="flex justify-center space-x-5">
           <a
-            href="https://www.facebook.com/share/vzkVVWhnDAvq1erG/?mibextid=LQQJ4d"
+            href="https://www.facebook.com/share/JTMQw4T9W7eaJCrF/?mibextid=LQQJ4d"
             target="_blank"
             rel="noopener noreferrer"
           >
