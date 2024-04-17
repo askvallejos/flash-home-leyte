@@ -92,7 +92,7 @@ const Navbar = () => {
                 duration={500}
                 onClick={handleNav}
               >
-                <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-[#ffec34] cursor-pointer">
+                <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-white cursor-pointer">
                   <TiHome className="mr-3" /> Home
                 </li>
               </Link>
@@ -104,7 +104,7 @@ const Navbar = () => {
                 duration={500}
                 onClick={handleNav}
               >
-                <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-[#ffec34] cursor-pointer">
+                <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-white cursor-pointer">
                   <RiGalleryFill className="mr-3" /> Gallery
                 </li>
               </Link>
@@ -113,7 +113,7 @@ const Navbar = () => {
                 target="_blank"
                 onClick={handleNav}
               >
-                <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-[#ffec34] cursor-pointer">
+                <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-white cursor-pointer">
                   <FaMapLocationDot className="mr-3" /> Location
                 </li>
               </a>
@@ -125,7 +125,7 @@ const Navbar = () => {
                 duration={500}
                 onClick={handleNav}
               >
-                <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-[#ffec34] cursor-pointer">
+                <li className="p-4 flex items-center justify-center border border-transparent hover:bg-black hover:border rounded hover:text-white cursor-pointer">
                   <FaPhone className="mr-3" /> Contact
                 </li>
               </Link>
