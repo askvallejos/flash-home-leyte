@@ -31,7 +31,7 @@ const Navbar = () => {
                 offset={50}
                 duration={500}
               >
-                <li className="m-4 border border-transparent border-x-8 hover:overline cursor-pointer">
+                <li className="m-4 border border-transparent border-x-8 hover:scale-125 cursor-pointer duration-200">
                   Home
                 </li>
               </Link>
@@ -42,7 +42,7 @@ const Navbar = () => {
                 offset={50}
                 duration={500}
               >
-                <li className="m-4 border border-transparent border-x-8 hover:overline cursor-pointer">
+                <li className="m-4 border border-transparent border-x-8 hover:scale-125 cursor-pointer duration-200">
                   Gallery
                 </li>
               </Link>
@@ -50,7 +50,7 @@ const Navbar = () => {
                 href="https://maps.app.goo.gl/MSGSXrasZeBeBLV88"
                 target="_blank"
               >
-                <li className="m-4 border border-transparent border-x-8 hover:overline cursor-pointer">
+                <li className="m-4 border border-transparent border-x-8 hover:scale-125 cursor-pointer duration-200">
                   Location
                 </li>
               </a>
@@ -61,7 +61,7 @@ const Navbar = () => {
                 offset={50}
                 duration={500}
               >
-                <li className="m-4 border border-transparent border-l-8 hover:overline cursor-pointer">
+                <li className="m-4 border border-transparent border-l-8 hover:scale-125 cursor-pointer duration-200">
                   Contact
                 </li>
               </Link>
